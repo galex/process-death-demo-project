@@ -11,13 +11,10 @@ appId: dev.galex.process.death.demo
     text: "Name = John Doe"
     enabled: true
 - pressKey: Home
-- stopApp:
-    kill: true
-- launchApp
+- launchApp:
+    killApp: true # Triggers adb shell am kill instead of force-stop
 - assertVisible:
     id: "dev.galex.process.death.demo:id/show_name"
     text: "Name = John Doe"
     enabled: true
 - stopApp
-
-# Doesn't work, yet!
