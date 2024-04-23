@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Process Death Demo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="enter_name_label">Enter Name Fragment</string>
+    <string name="show_info_label">Show Info Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="second_is_empty">Where\'s our Edit Text value?</string>
+    <string name="enter_your_name_here">Enter your name here</string>
+    <string name="show_name">"Name = %1$s"</string>
+</resources>

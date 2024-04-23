@@ -1,0 +1,23 @@
+appId: dev.galex.process.death.demo
+---
+- launchApp
+- tapOn:
+    id: "dev.galex.process.death.demo:id/enter_name"
+- inputText: "John Doe"
+- tapOn:
+    id: "dev.galex.process.death.demo:id/next"
+- assertVisible:
+    id: "dev.galex.process.death.demo:id/show_name"
+    text: "Name = John Doe"
+    enabled: true
+- pressKey: Home
+- stopApp:
+    kill: true
+- launchApp
+- assertVisible:
+    id: "dev.galex.process.death.demo:id/show_name"
+    text: "Name = John Doe"
+    enabled: true
+- stopApp
+
+# Doesn't work, yet!
