@@ -11,10 +11,12 @@ appId: dev.galex.process.death.demo
     text: "Name = John Doe"
     enabled: true
 - pressKey: Home
+- killApp
 - launchApp:
-    killApp: true # Triggers adb shell am kill instead of force-stop
+    stopApp: false
 - assertVisible:
     id: "dev.galex.process.death.demo:id/show_name"
-    text: "Name = John Doe"
+    text: "Name = null"
+    label: "Asserts that this screen lost its data after Process Death"
     enabled: true
 - stopApp
