@@ -43,6 +43,10 @@ class EnterNameFragment : Fragment() {
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

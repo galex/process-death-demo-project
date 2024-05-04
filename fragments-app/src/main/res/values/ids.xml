@@ -1,0 +1,6 @@
+<resources>
+    <id name="name_edit_text" />
+    <id name="home" />
+    <id name="account" />
+    <id name="settings" />
+</resources>

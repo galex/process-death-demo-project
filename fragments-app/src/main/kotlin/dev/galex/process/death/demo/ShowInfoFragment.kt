@@ -38,4 +38,14 @@ class ShowInfoFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    companion object {
+        fun newInstance(name: String): ShowInfoFragment {
+            return ShowInfoFragment().apply {
+                arguments = Bundle().apply {
+                    putString("name", name)
+                }
+            }
+        }
+    }
 }
