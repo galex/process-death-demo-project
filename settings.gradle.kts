@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Process Death Demo"
 include(":fragments-app")
- 
+include(":compose-app")
