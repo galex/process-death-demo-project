@@ -10,16 +10,10 @@ appId: dev.galex.process.death.demo
     id: "dev.galex.process.death.demo:id/show_name"
     text: "Name = John Doe"
     enabled: true
-# Puts the app into the background
-- pressKey: Home
-# Kills the app (adb shell am kill)
-- killApp
-# Relaunches the app
-- launchApp:
-    stopApp: false # Without adb shell am stop
+- runFlow: trigger-process-death.yaml
 - assertVisible:
     id: "dev.galex.process.death.demo:id/show_name"
-    text: "Name = null"
-    label: "Assert that \"Name = null\" meaning the screen lost its data after System-initiated Process Death"
+    text: "Name = John Doe"
+    label: "Assert that \"Name = John Doe\" meaning the screen kept its data after System-initiated Process Death"
     enabled: true
 - stopApp

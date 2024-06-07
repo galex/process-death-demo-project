@@ -1,0 +1,9 @@
+appId: dev.galex.process.death.demo
+---
+# Puts the app into the background
+- pressKey: Home
+# Kills the app (adb shell am kill)
+- killApp
+# Relaunches the app
+- launchApp:
+    stopApp: false # Without adb shell am stop
